@@ -71,6 +71,7 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'mattn/emmet-vim'
 Bundle 'tpope/vim-commentary'
+Bundle 'vim-scripts/jQuery'
 filetype indent plugin on						" 安装完后打开文件类型
 "------------------------------------------------------------------------------------
 "< vim-powerline > 插件设置
