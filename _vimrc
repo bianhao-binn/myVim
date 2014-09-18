@@ -17,13 +17,14 @@ source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim	"vim默认环境变量
 colorscheme freya				"指定配色方案
 set guifont=Courier\ New:h10	"设置字体为Courier New 字号为10
+set laststatus=2                "状态栏一直显示
 set go=							"默认隐藏菜单栏
 behave mswin					"启用shift加方向键选择
 set wildmenu					"vim自身命令行模式智能补全
-set nobackup 					"缺省不生成备份文件
+set nobackup 					"默认不生成备份文件
 set noswapfile					"不要生成swap文件
 let mapleader=","				"设置映射键为,
-cd ~\Documents\files           "设置默认保存路径
+cd ~\Documents\files            "设置默认保存路径
 "------------------------------------------------------------------------------------
 "编程习惯
 "------------------------------------------------------------------------------------
@@ -68,18 +69,17 @@ filetype off									" 先关闭文件类型
 set rtp+=$VIM/vimfiles/bundle/vundle/			" 将vundle路径添加到插件vim路径
 call vundle#rc('$VIM/vimfiles/bundle/')         " 执行Vundle初始化
 Bundle 'gmarik/vundle'					
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'bling/vim-airline'
 Bundle 'mattn/emmet-vim'
 Bundle 'tpope/vim-commentary'
 Bundle 'vim-scripts/jQuery'
 filetype indent plugin on						" 安装完后打开文件类型
 "------------------------------------------------------------------------------------
-"< vim-powerline > 插件设置
+"< vim-airline > 插件设置
 "------------------------------------------------------------------------------------
-set laststatus=2
-set t_Co=256
-set encoding=utf8
+let g:airline#extensions#tabline#enabled=1      "开启tabline
+let g:airline_theme='solarized'                 "设置airline皮肤
 "------------------------------------------------------------------------------------
 "< emmet > 插件设置
 "------------------------------------------------------------------------------------
