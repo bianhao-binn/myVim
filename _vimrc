@@ -16,7 +16,8 @@ set encoding=utf-8              "设置字符编码
 source $VIMRUNTIME/vimrc_example.vim	
 source $VIMRUNTIME/mswin.vim	"vim默认环境变量
 colorscheme freya				"指定配色方案
-set guifont=Consolas:h11    	"设置字体，字号为10
+"set guifont=Consolas:h11    
+set guifont=Courier\ New:h10    "设置字体，字号为10
 set laststatus=2                "状态栏一直显示
 set go=							"默认隐藏菜单栏
 behave mswin					"启用shift加方向键选择
@@ -79,8 +80,8 @@ filetype indent plugin on						" 安装完后打开文件类型
 "< vim-airline > 插件设置
 "------------------------------------------------------------------------------------
 let g:airline#extensions#tabline#enabled=1      "开启tabline
-let g:airline_theme="solarized"                 "设置airline皮肤
-let g:airline_powerline_fonts=1
+let g:airline_theme="luna"                 "设置airline皮肤
+"let g:airline_powerline_fonts=1
 "------------------------------------------------------------------------------------
 "< emmet > 插件设置
 "------------------------------------------------------------------------------------
