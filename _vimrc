@@ -9,14 +9,14 @@
 "初始设置
 "------------------------------------------------------------------------------------
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1	"默认编码检测
-set encoding=utf-8				"设置字符编码
 set termencoding=cp936			"非GUI界面的vim乱码
 language messages zh_CN.UTF-8	"提示信息乱码
 set nocompatible				"兼容老版本vi脚本
+set encoding=utf-8              "设置字符编码
 source $VIMRUNTIME/vimrc_example.vim	
 source $VIMRUNTIME/mswin.vim	"vim默认环境变量
 colorscheme freya				"指定配色方案
-set guifont=Courier\ New:h10	"设置字体为Courier New 字号为10
+set guifont=Consolas:h11    	"设置字体，字号为10
 set laststatus=2                "状态栏一直显示
 set go=							"默认隐藏菜单栏
 behave mswin					"启用shift加方向键选择
@@ -79,7 +79,8 @@ filetype indent plugin on						" 安装完后打开文件类型
 "< vim-airline > 插件设置
 "------------------------------------------------------------------------------------
 let g:airline#extensions#tabline#enabled=1      "开启tabline
-let g:airline_theme='solarized'                 "设置airline皮肤
+let g:airline_theme="solarized"                 "设置airline皮肤
+let g:airline_powerline_fonts=1
 "------------------------------------------------------------------------------------
 "< emmet > 插件设置
 "------------------------------------------------------------------------------------
@@ -90,4 +91,4 @@ let g:user_emmet_expandabbr_key='<C-E>'
 "let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_start_level=2                   "在第二大列开始显示
 let g:indent_guides_guide_size=1                    "高亮的宽度
-nmap <leader>l :IndentGuidesToggle<CR>              "映射成,l
+nmap <leader>l :IndentGuidesToggle<CR>              "映射成,l 
